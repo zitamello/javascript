@@ -1,0 +1,373 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Rowdies:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.main-bg {
+  background-image: url('../images/mainbg.svg');
+  background-size: cover;
+  background-position: center center;
+  color: var(--white-text);
+}
+
+.white-bg {
+  background: var(--white-text);
+}
+
+.main-content {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: var(--gap);
+}
+
+.section-class {
+  height: 89vh;
+}
+
+.menu {
+  background:var(--white-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-bottom: 0.1rem solid var(--light-grey);
+  box-shadow:0px 1px 1px var(--light-gre);
+  z-index: 1;
+}
+
+.menu h2{
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.menu h2 a {
+  color: inherit;
+}
+.menu-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 2.3rem;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  position: relative;
+
+}
+
+.menu ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 1.5rem;
+  left: 25%;
+  width: 0;
+  background: var(--violet-color);
+  height: 0.2rem;
+  transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover:after {
+  width: 50%;
+}
+
+.menu-spacing {
+  height: 65px;
+}
+
+.white-h2-text {
+  color: var(--white-text);
+  font-size: 4.5rem;
+  cursor: default;
+  margin-bottom: 4rem;
+}
+
+.intro-content {
+  top: 3.2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  align-content: stretch;
+  min-height: 80vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.intro-text, .div-intro-img {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: stretch;
+  line-height: 1.2;
+}
+
+.div-intro-img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#skills-btn:hover {
+  color: blue;
+  background-color: #d5e6f5;
+}
+
+.about-text {
+  max-width: 64rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  height: 10vh;
+  text-align: center;
+
+}
+
+.about-text h3 {
+  font-size: 2.2rem;
+}
+
+.div-languages {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.div-languages ul {
+  list-style: none;
+  display: flex;
+}
+
+.div-languages ul li a {
+  display: block;
+  padding: 2.3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.div-languages ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 1.5rem;
+  left: 25%;
+  width: 0;
+  background: var(--violet-color);
+  height: 0.2rem;
+  transition: all 300ms ease-in-out;
+}
+
+.div-languages ul li a:hover:after {
+  width: 50%;
+}
+
+.ul-langs {
+  justify-content: center;
+  text-align: center;
+}
+
+.div-about-text {
+  max-width: 90rem;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  margin-top: -10rem;
+}
+
+.div-about-text p {
+  margin-top: 1.5rem;
+  color: #000;
+  font-size: 1.4rem;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.grid-content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 12rem;
+}
+
+.grid-content h2 {
+  font-size: 3.5rem;
+  color: var(--white-color);
+  cursor: default;
+  top: -5rem;
+  margin-top: -22rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  gap: var(--gap);
+  align-content: stretch;
+  min-height: 30vh;
+}
+
+.article-1st-title{
+  color: #fff;
+  font-size: 2.1rem;
+  margin-left: 2.5rem;
+}
+
+.div-1st-img{
+  margin-top: 2rem;
+  display: flex;
+  line-height: 1.2;
+  width:  30vh;
+}
+
+.gallery-1st-title {
+  font-size: 1.5rem;
+  margin-left: 13rem;
+}
+
+.gallery-2nd-title {
+  font-size: 1.5rem;
+  margin-left: 10rem;
+}
+
+.p-gallery-article {
+  color: #000;
+  font-size: 1.3rem;
+  margin-left: 5rem;
+  text-align: left;
+}
+
+.div-1st-img-gallery {
+  margin-top: 2rem;
+  display: flex;
+  line-height: 1.2;
+  margin-left: 8rem;
+  width: 30rem;
+  height: 20.1rem;
+}
+
+.div-1st-img-gallery:hover {
+  border: 1px solid;
+  box-shadow: 3px 3px #888888;
+}
+
+.div-2nd-img-gallery {
+  margin-top: 2rem;
+  display: flex;
+  line-height: 1.2;
+  margin-left: 5rem;
+  width: 30rem;
+  height: 20.1rem;
+}
+
+.div-2nd-img-gallery:hover {
+  border: 1px solid;
+  box-shadow: 3px 3px #888888;
+}
+
+.div-3rd-img-gallery {
+  margin-top: 2rem;
+  display: flex;
+  line-height: 1.2;
+  margin-left: 5rem;
+  width: 30rem;
+  height: 20.1rem;
+}
+
+.div-3rd-img-gallery:hover {
+  border: 1px solid;
+  box-shadow: 3px 3px #888888;
+}
+.article-2nd-title{
+  color: #fff;
+  font-size: 2.3rem;
+  margin-left: 2.5rem;
+}
+
+.div-2nd-img {
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: stretch;
+  line-height: 1.2;
+  width:  30vh;
+}
+
+
+.article-3rd-title{
+  color: #fff;
+  font-size: 2.3rem;
+  margin-left: 2.5rem;
+}
+
+.div-3rd-img {
+  margin-top: 1.2rem;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: stretch;
+  line-height: 1.2;
+  width:  30vh;
+}
+
+
+.bottom-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2rem;
+  gap: var(--gap);
+  align-content: stretch;
+  height: 22vh;
+}
+
+.bottom-row .div-2nd-img {
+  width: 14.5rem;
+  margin-left: 7.8rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: stretch;
+  line-height: 1.2;
+}
+
+.p-contact {
+  font-size: 1.7rem;
+}
+
+#btn-github {
+  width: 14rem;
+  color: #000;
+}
+
+#btn-email {
+  width: 14rem;
+  margin-left: 2rem;
+}
