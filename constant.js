@@ -3,8 +3,8 @@ let ageClient = 30;
 let peso = 80;
 const altura = 1.80;
 
-const imc = peso / (altura * altura);
+const indiceMassaCorporal = peso / (altura * altura);
 
-messageOutput = `O IMC do cliente ${nameClient} é ${imc}`;
+messageOutput = `O IMC do cliente ${nameClient} é ${indiceMassaCorporal}`;
 
 console.log(messageOutput);
