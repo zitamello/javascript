@@ -19,8 +19,7 @@ function myFunction() {
       altura: altura.value
     });
 
-
-    result.innerHTML += `<p>${nome.value} ${sobrenome.value} ${peso.value} ${altura.value}`;
+    result.innerHTML += `<p>${nome.value} ${sobrenome.value} ${peso.value} ${altura.value}</p>`;
     console.log(result);
     console.log(pessoas);
 
