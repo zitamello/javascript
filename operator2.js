@@ -26,3 +26,12 @@ const password = senha === '12345';
 const loginSucessful = usuario === senha;
 
 console.log(`Usuario so pode logar se o login e o password for true. O login é true? ${loginSucessful}`);
+
+function speak() {
+    return "I'm speaking";
+}
+
+let speaking = true;
+
+console.log(speaking && speak());
+
