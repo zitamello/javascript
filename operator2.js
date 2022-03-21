@@ -43,5 +43,12 @@ console.log(18 === '18', "strict 18 === '18'");
 console.log(18 === 18, `strict 18 === 18 `);
 console.log(18 == '18', "loose 18 == '18'");
 
-const favorite = prompt("What's your favorite number?");
+const favorite = Number(prompt("What's your favorite number?"));
+
+if (favorite === 23){
+    console.log("Cool! 23 is a good number!");
+} else {
+    console.log("The number is not 23.");
+}
+
 
