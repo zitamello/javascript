@@ -28,8 +28,8 @@ const averageScoreKoalas = (92 + 91 + 110) / 3;
 // }
 
 const minimumScore = 100; // minimum
-const totalScoreDolphins = 99 + 112 + 101;
-const totalScoreKoalas = 109 + 95 + 106;
+const totalScoreDolphins =  (96 + 108 + 89) / 3; 
+const totalScoreKoalas = (92 + 91 + 110) / 3; 
 
 console.log(totalScoreDolphins, totalScoreKoalas);
 
@@ -37,6 +37,8 @@ if (totalScoreDolphins > totalScoreKoalas && totalScoreDolphins >= minimumScore)
     console.log("Dolphins wins another one!");
 } else if (totalScoreKoalas > totalScoreDolphins && totalScoreKoalas >= minimumScore) {
     console.log("Koalas wins once again!")
-}else {
+}else if (totalScoreKoalas === totalScoreDolphins && totalScoreKoalas >= minimumScore && totalScoreDolphins >= minimumScore) {
+    console.log("Both win the trophy!");
+} else {
     console.log("No winners today!");
 }
