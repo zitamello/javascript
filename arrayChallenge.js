@@ -25,11 +25,11 @@ function calculateTip(bill) {
     let tip;
     if(bill >= 50 && bill <= 300) {
         tip = 0.15;
-        tip = tip * bill;
+        tip *= bill;
         return tip;
     }else {
         tip = 0.2;
-        tip = tip * bill;
+        tip *= bill;
         return tip;
     }
 }
@@ -38,5 +38,5 @@ const tips = [calculateTip(bills[0]), calculateTip(bills[1]), calculateTip(bills
 console.log('Bill costs: ' + `${bills[0]}, ${bills[1]}, ${bills[2]}`);
 console.log('Tips for each bill: ' + `${tips[0]}, ${tips[1]}, ${tips[2]}`);
 
-const total = [(tips[0] + bills[0]), (tips[1] + bills[1]), (tips[2] + bills[2])];
-console.log('Total bill: ' + `${total[0]}, ${total[1]}, ${total[2]}`);
+const totals = [(tips[0] + bills[0]), (tips[1] + bills[1]), (tips[2] + bills[2])];
+console.log('Total bill: ' + `${totals[0]}, ${totals[1]}, ${totals[2]}`);
