@@ -15,7 +15,7 @@ const jonas = {
     calculateAge: function(){
         this.age = 2022 - this.birthYear;
         return this.age;
-    },
+    },  
 
     getSummary: function(){
         return `${jonas.firstName} is a ${jonas.calculateAge()} years old ${jonas.job} and he has` +
