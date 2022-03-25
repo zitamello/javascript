@@ -12,9 +12,9 @@
 
 const partialBillValue = 275; 
 const tip = partialBillValue >= 50 && partialBillValue <= 300 ?  0.15 : 0.2;
+const totalValue = partialBillValue + (partialBillValue * tip);
 
-
-console.log(`The bill was ${partialBillValue}, the tip was ${partialBillValue * tip}
- and the total value is ${partialBillValue + (partialBillValue * tip)} `);
+console.log(`The bill was ${partialBillValue}, the tip was ${partialBillValue * tip} 
+and the total value is ${totalValue}`);
 
 
