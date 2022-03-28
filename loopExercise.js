@@ -25,7 +25,5 @@ for(let i = 0; i < populations.length; i++) {
 //same code from before but without using for loops; 
 percentagesOriginal.push(`${percentageOfWorld([populations[0]])}, ${percentageOfWorld([populations[1]])}, ` +
 `${percentageOfWorld([populations[2]])}, ${percentageOfWorld([populations[3]])}`);
-
-
 console.log(percentagesOriginal);
 console.log(percentages2);
