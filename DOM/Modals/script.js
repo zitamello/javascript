@@ -8,6 +8,7 @@ const btnClose = document.querySelector('.close-modal');
 const btnsOpenModal = document.querySelectorAll('.show-modal');
 
 const openModal = function() {
+    //when using classList, dont use ., just type the name of the class as it is. 
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
 };
